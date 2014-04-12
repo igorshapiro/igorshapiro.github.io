@@ -10,7 +10,7 @@
 
   <title>
     
-      What's Jekyll? &middot; Hyde
+      First post &middot; Igor Shapiro Blog
     
   </title>
 
@@ -34,8 +34,8 @@
     <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <h1>Hyde</h1>
-      <p class="lead">A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+      <h1>Igor Shapiro Blog</h1>
+      <p class="lead">Writing about development</p>
     </div>
 
     <ul class="sidebar-nav">
@@ -65,10 +65,6 @@
           
         
       
-
-      <li class="sidebar-nav-item"><a href="https://github.com/poole/hyde/archive/v2.0.0.zip">Download</a></li>
-      <li class="sidebar-nav-item"><a href="https://github.com/poole/hyde">GitHub project</a></li>
-      <li class="sidebar-nav-item">Currently v2.0.0</li>
     </ul>
 
     <p>&copy; 2014. All rights reserved.</p>
@@ -78,17 +74,20 @@
 
     <div class="content container">
       <div class="post">
-  <h1 class="post-title">What's Jekyll?</h1>
-  <span class="post-date">06 Feb 2012</span>
-  <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project&#39;s readme</a>:</p>
+  <h1 class="post-title">First post</h1>
+  <span class="post-date">12 Apr 2014</span>
+  <p>Code highlighting test</p>
 
-<blockquote>
-<p>Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
-
-<p>It&#39;s an immensely useful tool and one we encourage you to use here with Hyde.</p>
-
-<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
+<div class="highlight"><pre><code class="ruby"><span class="k">class</span> <span class="nc">Cls</span>
+  <span class="k">def</span> <span class="nf">show</span>
+    <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+    <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+      <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
+      <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
 
 </div>
 
@@ -98,18 +97,9 @@
     
       <li>
         <h3>
-          <a href="/2013/12/28/introducing-hyde/">
-            Introducing Hyde
-            <small>28 Dec 2013</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2012/02/07/example-content/">
-            Example content
-            <small>07 Feb 2012</small>
+          <a href="/2014/04/12/achieving-elegant-code-with-nodejs/">
+            Achieving elegant code with node.js
+            <small>12 Apr 2014</small>
           </a>
         </h3>
       </li>
