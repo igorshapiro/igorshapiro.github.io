@@ -179,6 +179,8 @@ But it doesn't impress me much. It looks like code horror, it reads like code ho
 Seems like we're doomed. Seems like Javascript was born to be an unreadable-loads-of-code-horror language. But there's some light at the beginning of year 2015. Yep. This is when the
 ES6 standard is estimated to be approved.
 
+## ES6 Javascript generator functions & yield
+
 But we already have it functioning in development builds of node.js. Just install the development branch of node and run it like this:
 
 {% highlight sh %}

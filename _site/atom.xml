@@ -4,7 +4,7 @@
  <title>Igor Shapiro Blog</title>
  <link href="http://hyde.getpoole.com/atom.xml" rel="self"/>
  <link href="http://hyde.getpoole.com/"/>
- <updated>2014-04-12T18:12:50+03:00</updated>
+ <updated>2014-04-12T18:26:36+03:00</updated>
  <id>http://hyde.getpoole.com</id>
  <author>
    <name>Mark Otto</name>
@@ -196,6 +196,8 @@ But it doesn&amp;#39;t impress me much. It looks like code horror, it reads like
 
 &lt;p&gt;Seems like we&amp;#39;re doomed. Seems like Javascript was born to be an unreadable-loads-of-code-horror language. But there&amp;#39;s some light at the beginning of year 2015. Yep. This is when the
 ES6 standard is estimated to be approved.&lt;/p&gt;
+
+&lt;h2&gt;ES6 Javascript generator functions &amp;amp; yield&lt;/h2&gt;
 
 &lt;p&gt;But we already have it functioning in development builds of node.js. Just install the development branch of node and run it like this:&lt;/p&gt;
 
