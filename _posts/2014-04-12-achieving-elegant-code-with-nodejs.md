@@ -156,14 +156,14 @@ describe('redis transport', function() {
   it('works like fifo queue', function*() {
     transport.enqueue({a:1})
       .then(function() {
-        return transport.enqueue({b: 1})
+        return transport.enqueue({b: 1});
       })
       .then(function() {
-        return transport.dequeue()
+        return transport.dequeue();
       })
       .then(function(msg) {
-        msg.should.eql({a: 1})
-        return transport.dequeue()
+        msg.should.eql({a: 1});
+        return transport.dequeue();
       })
       .done(function(msg) {
         msg.should.eql({b: 1});
