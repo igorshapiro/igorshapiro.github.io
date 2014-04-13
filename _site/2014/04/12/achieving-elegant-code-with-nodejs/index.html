@@ -233,14 +233,14 @@ and the callbacks syntax makes me made. People say promises to the resque. Let&#
   <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;works like fifo queue&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="o">*</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">transport</span><span class="p">.</span><span class="nx">enqueue</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span><span class="mi">1</span><span class="p">})</span>
       <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">transport</span><span class="p">.</span><span class="nx">enqueue</span><span class="p">({</span><span class="nx">b</span><span class="o">:</span> <span class="mi">1</span><span class="p">})</span>
+        <span class="k">return</span> <span class="nx">transport</span><span class="p">.</span><span class="nx">enqueue</span><span class="p">({</span><span class="nx">b</span><span class="o">:</span> <span class="mi">1</span><span class="p">})</span>
       <span class="p">})</span>
       <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">transport</span><span class="p">.</span><span class="nx">dequeue</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nx">transport</span><span class="p">.</span><span class="nx">dequeue</span><span class="p">()</span>
       <span class="p">})</span>
       <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">msg</span><span class="p">.</span><span class="nx">should</span><span class="p">.</span><span class="nx">eql</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="mi">1</span><span class="p">})</span>
-        <span class="nx">transport</span><span class="p">.</span><span class="nx">dequeue</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nx">transport</span><span class="p">.</span><span class="nx">dequeue</span><span class="p">()</span>
       <span class="p">})</span>
       <span class="p">.</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">msg</span><span class="p">.</span><span class="nx">should</span><span class="p">.</span><span class="nx">eql</span><span class="p">({</span><span class="nx">b</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
